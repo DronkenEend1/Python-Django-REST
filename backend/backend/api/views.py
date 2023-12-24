@@ -5,7 +5,7 @@ def api_home(request, *args, **kwargs):
     body = request.body # string of JSON data
     data = {}
     
-    try: data = json.loads(body) # string of JSON data -> dictionary
+    try: data = json.loads(body) # string of JSON data turnt into data dictionary
     except: pass
     
     data['params'] = dict(request.GET)
